@@ -1,0 +1,18 @@
+.grid {
+
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width:400px;
+    
+}
+h3{
+    text-align: center;
+    padding-top: 100px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
