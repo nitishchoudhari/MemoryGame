@@ -1,18 +1,36 @@
 .grid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 400px;
+}
 
-    display: flex;
-    flex-wrap: wrap;
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+  height: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+  .grid {
     height: 300px;
-    width:400px;
-    
+    width: 300px;
+  }
+  .center {
+    justify-content: flex-end;
+  }
 }
-h3{
-    text-align: center;
-    padding-top: 100px;
-}
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
+
+@media only screen and (max-width: 380px) {
+  .grid {
+    height: 200px;
+    width: 200px;
+  }
+  .center {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
 }
